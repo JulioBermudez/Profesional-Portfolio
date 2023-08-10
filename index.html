@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profesional Portfolio</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <!-- CSS Main -->
+    
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="row">
+      <section class="col-12">
+
+        <nav class="navbar navbar-dark bg-secondary">
+          <div class="container-fluid d-flex justify-content-end">
+            <div class="col-2 text-end">Bermudez</div>
+            <div class="col-6 d-flex justify-content-center">
+           <ul class="col-10 d-flex justify-content-evenly">
+            <li>Home</li>
+            <li>About</li>
+            <li>Resume</li>
+            <li>Portfolio</li>
+            <li>Contact</li>
+            <li class="text-warning">+1 754 715 8059</li>
+           </ul>
+          </div>
+        
+         <div class="col-3 d-flex justify-content-end">
+            <button id="nav-bar-menu" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </nav>
+  </section>
+  </header>
+    <!-- Small-Img -->
+    <article
+      class="row bg-dark d-flex justify-content-center custom-container-hero"
+    >
+      <section class="custom-container-content-hero">
+        <div class="row">
+          <div class="col-12">
+            <div class="container">
+              <div class="container-inner">
+                <img
+                  class="circle"
+                  src="https://envato-shoebox-0.imgix.net/53bb/d958-13cc-4c3a-bf4a-641afa8d5267/DSC_1436.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=800&s=a023bea931fc47550d39dfae1a6bd1b6"
+                />
+                <img class="img img1" src="./assets/images/testImg.png" />
+              </div>
+            </div>
+          </div>
+          <!-- Text-Content-Small-Img -->
+          <div class="col-12 text-center">
+            <h1>Hi, I'm <span class="text-warning">Julio Bermudez</span></h1>
+            <br />
+            <p>
+              I am a frontend web developer. I can provide clean code and pixel
+              perfect design. I also make website more & more interactive with
+              web animations.
+            </p>
+          </div>
+          <section class="col-12 d-flex justify-content-center">
+            <div class="col-4 d-flex justify-content-evenly">
+              <div><i class="fa-brands fa-github fa-xl"></i></div>
+              <div><i class="fa-brands fa-linkedin fa-xl"></i></div>
+              <div><i class="fa-brands fa-facebook fa-xl"></i></div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </article>
+
+    <!-- Seccion Prueba -->
+
+    <!-- FIN Seccioon Prueba -->
+    <!-- 
+    <section class="row">
+      <div class="col-6">
+        Presentation
+        <div class="row">
+          <div class="col-12">
+            <h3>Hi, I'm</h3>
+            <h1>Julio Bermudez</h1>
+            <br />
+            <h3>Full Stack Web Developer</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              impedit repellendus consequatur quibusdam, illum iure animi
+              inventore maxime vitae perferendis!
+            </p>
+          </div>
+          <div class="col-12">
+            <button>Download</button>
+            <button>Contact</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-4 custom-face-img-div">
+        <img class="face-img" src="#" alt="" />
+      </div>
+    </section>
+
+    <br />
+    <div class="row">
+      <div class="col-12">About Me</div>
+      <div class="col-12">
+        <div>Picture</div>
+        <h2>Hi There! I'm Julio Bermudez</h2>
+        <h4>Web developer</h4>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          Exercitationem vero saepe est ullam quod! Earum expedita dignissimos
+          itaque velit eaque.
+        </p>
+        <div class="col-12">
+          <ul>
+            <li>Birthday : Aug 08, 1990</li>
+            <li>Phone : +1 754 715 8059</li>
+            <li>Email : julioph0n3@gmail.com</li>
+            <li>From : 576 NW 114th AVE</li>
+            <li>Languaje : English, Spanish</li>
+          </ul>
+        </div>
+        <div>
+          <button>Download CV</button>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div>
+        <ul>
+          <li>Web Design</li>
+          <li>App Development</li>
+          <li>Product Design</li>
+          <li>Responsive Design</li>
+        </ul>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <div>
+        <h2>My Skills</h2>
+      </div>
+      <div class="col-12">
+        <h3>All the skills that I have in that field of work are mentioned.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sint
+          ipsum quasi laboriosam, fugit libero tempore nobis adipisci ea earum.
+        </p>
+        <div>Grafic with my porcentage</div>
+      </div>
+    </div>
+    <br />
+    <div class="row">
+      <h1>Resume</h1>
+    </div>
+    <br />
+    <div class="row">
+      <h2>Portfolio</h2>
+    </div>
+    <br />
+    <div class="row">
+      <div class="col-12">
+        <h2>reviews</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <h2>Contact Me</h2>
+      </div>
+    </div> -->
+
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- FontAwsome -->
+    <script
+      src="https://kit.fontawesome.com/c2587f10ba.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JQuery -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+    <!-- Jquery Ripples -->
+   
+    <!-- JavaScript Main -->
+    <script src="./assets/js/jquery.js"></script>
+  </body>
+</html>
