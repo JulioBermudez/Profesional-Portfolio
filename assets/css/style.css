@@ -6,23 +6,33 @@ body {
   overflow-x: hidden;
 }
 
+
 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .progress {
   width: 100%;
   height: 8px;
 }
 .custom-container-hero {
-  height: 931px;
+  background-image: url(../images/Untitled.png);
+  height: 930px;
+  background-position: center;
+  background-repeat:repeat;
+  background-size: cover;
+  
+}
+.custom-container-hero  h1{
+font-size: 400%;
 }
 .custom-section-header {
   padding: 0px;
 }
 .custom-container-content-hero {
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .custom-img-half-face-bg {
@@ -33,15 +43,16 @@ img {
 .custom-img-half-face-bg img {
   opacity: 0.1;
 }
-.custom-div-img-portfolio{
- 
+.custom-div-img-portfolio {
 }
-/*Section Small Image*/
+
+/*Landing Image*/
 .container {
   border-radius: 50%;
+  width: 100%;
   height: 312px;
   -webkit-tap-highlight-color: transparent;
-  transform: scale(0.4);
+  transform: scale(0.5);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 400px;
 }
@@ -63,9 +74,9 @@ img {
   top: -200px;
 }
 .circle {
-  background-color: #fee7d3;
+  background-color:;
   border-radius: 50%;
-  border: solid 15px #212529;
+  border: solid 15px #0a101e;
   cursor: pointer;
   height: 380px;
   left: 10px;
@@ -133,8 +144,54 @@ img {
   opacity: 1;
   right: 10px;
 }
-/*-------End Bitton Download CV*/
+.color-nav-bar {
+  background-color:  #0a101e;
+}
+
+.custom-avatar{
+  background-image:linear-gradient(90deg, rgba(11,25,38,1) 0%, rgba(46,58,80,1) 50%, rgba(11,25,38,1) 100%);
+  object-fit: cover;
+  position: relative;
+border: solid 5px #617389;
+width: 190px;
+height: 190px;
+border-radius: 50%;
+top: 140px;
+
+}
+.custom-avatar img{
+  left: -1px;
+  position: absolute;
+  object-fit: contain;
+  width: 182px;
+  height: 180px; 
+  border-radius: 50%;
+}
+.custom-container-avatar{
+margin-top: 100px;
+}
+.custom-container-icons{
+  margin-top: 50px;
+}
+.custom-div-100px{
+  height: 80px;
+}
+.custom-about-me{
+  position: relative;
+  opacity: 0.1;
+  font-size: 600%;
+  bottom: 70px;
+  color: #617389;
+}
+/*-------End Button Download CV*/
+#display-none{
+  display:none;
+}
+
+
+
 
 /* Seccion Prueba */
 
 /* Fin Seccion Prueba */
+

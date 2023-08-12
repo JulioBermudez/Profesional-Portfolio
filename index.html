@@ -17,148 +17,91 @@
   </head>
   <body class="row d-flex justify-content-center">
     <!-- Header -->
-    <header class="row d-flex justify-content-center sticky-top">
-      <section class="col-12 custom-section-header">
-        <nav class="navbar navbar-dark bg-secondary">
-          <div class="container-fluid d-flex justify-content-end">
-            <div class="col-2 text-end">Bermudez</div>
-            <div class="col-6 d-flex justify-content-center">
-              <ul class="col-10 d-flex justify-content-evenly">
-                <li>Home</li>
-                <li>About</li>
-                <li>Resume</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
-                <li class="text-warning">+1 754 715 8059</li>
-              </ul>
-            </div>
-
-            <div class="col-3 d-flex justify-content-end">
-              <button
-                id="nav-bar-menu"
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar"
-                aria-controls="offcanvasDarkNavbar"
-                aria-label="Toggle navigation"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-            <div
-              class="offcanvas offcanvas-end text-bg-dark"
-              tabindex="-1"
-              id="offcanvasDarkNavbar"
-              aria-labelledby="offcanvasDarkNavbarLabel"
+    <header class="row d-flex justify-content-center sticky-top color-nav-bar">
+      <nav class="navbar navbar-expand-lg">
+        <div
+          class="col-sm-12 col-md-12 col-lg-3 col-xl-4 col-xxl-4 container-fluid"
+        >
+          <a class="navbar-brand" href="#"
+            ><i class="fa-brands text-warning fa-black-tie fa-2xl"></i
+          ></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active text-warning" aria-current="page" href="#"
+              >Home</a
             >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                  Dark offcanvas
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close btn-close-white"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex mt-3" role="search">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
+            <a class="nav-link text-white" href="#">About</a>
+            <a class="nav-link text-white" href="#">Resume</a>
+            <a class="nav-link text-white" href="#">Portfolio</a>
+            <a class="nav-link text-white" href="#">Reviews</a>
+            <a class="nav-link text-white" href="#">Contact</a>
+            <a
+              class="nav-link text-white d-sm-none d-md-none d-lg-block"
+              href="#"
+              >|</a
+            >
+            <a class="nav-link d-sm-none d-md-none d-lg-block" href="#"
+              ><i class="fa-solid fa-phone" style="color: #fdfeff"></i
+            ></a>
+            <a
+              class="nav-link text-warning d-sm-none d-md-none d-lg-block"
+              href="#"
+              >+1 754 715 8059</a
+            >
           </div>
-        </nav>
-      </section>
+        </div>
+      </nav>
     </header>
 
     <!-- Landing img -->
-    <article
-      class="row bg-dark d-flex justify-content-center custom-container-hero"
-    >
-      <section class="custom-container-content-hero">
-        <div class="row">
-          <div class="col-12">
-            <div class="container">
-              <div class="container-inner">
-                <img
-                  class="circle"
-                  src="https://envato-shoebox-0.imgix.net/53bb/d958-13cc-4c3a-bf4a-641afa8d5267/DSC_1436.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=800&s=a023bea931fc47550d39dfae1a6bd1b6"
-                />
-                <img class="img img1" src="./assets/images/testImg.png" />
-              </div>
-            </div>
-          </div>
-          <!-- Text-Content-Small-Img -->
-          <div class="col-12 text-center">
-            <h1>Hi, I'm <span class="text-warning">Julio Bermudez</span></h1>
-            <br />
-            <p>
-              I am a frontend web developer. I can provide clean code and pixel
-              perfect design. I also make website more & more interactive with
-              web animations.
-            </p>
-          </div>
-          <section class="col-12 d-flex justify-content-center">
-            <div class="col-4 d-flex justify-content-evenly">
-              <div><i class="fa-brands fa-github fa-xl"></i></div>
-              <div><i class="fa-brands fa-linkedin fa-xl"></i></div>
-              <div><i class="fa-brands fa-facebook fa-xl"></i></div>
-            </div>
-          </section>
+    <article class="row d-flex justify-content-center custom-container-hero">
+      <div class="d-flex justify-content-center custom-container-avatar">
+        <div class="custom-avatar">
+          <img src="./assets/images/avatar.png" alt="Avatar Image" />
         </div>
-      </section>
+      </div>
+
+      <div class="col-12 text-center">
+        <h1>Hi, I'm <span class="text-warning">Julio Bermudez</span></h1>
+        <br />
+        <p>
+          I am a frontend web developer. I can provide clean code and pixel
+          perfect design.
+        </p>
+        <p>I also make website more & more interactive with web animations.</p>
+
+        <section
+          class="col-12 d-flex justify-content-center custom-container-icons"
+        >
+          <div class="col-3 d-flex justify-content-evenly">
+            <div><i class="fa-brands fa-github fa-2xl"></i></div>
+            <div><i class="fa-brands fa-linkedin fa-2xl"></i></div>
+            <div><i class="fa-brands fa-facebook fa-2xl"></i></div>
+          </div>
+        </section>
+      </div>
     </article>
     <!-- Main -->
-    <main class="col-9">
+    <main class="col-8">
       <br />
+      <!-- About Me -->
       <section class="row">
+        <div class="col-12 custom-div-100px"></div>
         <!-- About Me -->
         <div class="col-12 text-center text-warning">
-          <h1>About Me</h1>
+          <h1>ABOUT ME <h1 class="custom-about-me">ABOUT ME</h1> </h1>
         </div>
         <div class="d-flex justify-content-center">
           <div class="col-12 d-flex justify-content-evenly">
@@ -189,11 +132,12 @@
           </div>
         </div>
       </section>
-      <br />
-      <!-- Why Choose Me -->
+      
+      <!-- My Skills -->
+      <div class="col-12 custom-div-100px"></div>
       <div class="col-12 text-center text-warning">
-        <h1>Why Choose Me</h1>
-        <h6>My Experience Area</h6>
+        <h1>MY SKILLS <h1 class="custom-about-me">MY SKILLS</h1></h1>
+        
       </div>
 
       <article class="row d-flex justify-content-center">
@@ -355,66 +299,240 @@
         </section>
         <!-- Seccion Prueba -->
       </article>
-      <br />
+      
+      
       <!-- Portfolio -->
+      <div class="col-12 custom-div-100px"></div>
       <article class="row">
-        <div class="col-12 d-flex justify-content-center">
-          <h1 class="text-warning">Portfolio</h1>
+        <div class="col-12 text-center">
+          <h1 class="text-warning">PORTFOLIO <h1 class="custom-about-me">PORTFOLIO</h1></h1>
         </div>
         <div class="col-12 d-flex flex-wrap justify-content-center">
           <div class="col-4 p-3 custom-div-img-portfolio">
-            <img src="./assets/images/IMG-2858.jpg" alt="" />
+            <img
+              src="https://elements-cover-images-0.imgix.net/71981200-7c08-4bd5-accc-8771a0c1d58a?auto=compress%2Cformat&fit=max&w=1370&s=477ec2b98b610131e415096695bbcb76"
+              alt=""
+            />
           </div>
           <div class="col-4 p-3 custom-div-img-portfolio">
-            <img src="./assets/images/IMG-2858.jpg" alt="" />
+            <img
+              src="https://elements-cover-images-0.imgix.net/5e9e5ac6-0af0-4bf4-9cc8-ceaf6afca7e6?auto=compress%2Cformat&fit=max&w=1370&s=449d34fd8f969758445b251800abb996"
+              alt=""
+            />
           </div>
           <div class="col-4 p-3 custom-div-img-portfolio">
-            <img src="./assets/images/IMG-2858.jpg" alt="" />
+            <img
+              src="https://elements-cover-images-0.imgix.net/372e0d6d-386c-4874-b3cd-49dfe1633161?auto=compress%2Cformat&fit=max&w=1370&s=8d45933173e9151bcb99bcab1b615a85"
+              alt=""
+            />
           </div>
           <div class="col-4 p-3 custom-div-img-portfolio">
-            <img src="./assets/images/IMG-2858.jpg" alt="" />
+            <img
+              src="https://elements-cover-images-0.imgix.net/cc5b16b9-352b-41dc-9eac-05ec37dc26ca?auto=compress%2Cformat&fit=max&w=1170&s=97c3d45730372a096d77bda23b63cdd8"
+              alt=""
+            />
           </div>
           <div class="col-4 p-3 custom-div-img-portfolio">
-            <img src="./assets/images/IMG-2858.jpg" alt="" />
+            <img
+              src="https://elements-cover-images-0.imgix.net/324083f5-cba8-46e4-ac74-0c2bc5156946?auto=compress%2Cformat&fit=max&w=1370&s=fa3affd1333b7ca065ca229fdd10157f"
+              alt=""
+            />
           </div>
           <div class="col-4 p-3 custom-div-img-portfolio">
-            <img src="./assets/images/IMG-2858.jpg" alt="" />
+            <img
+              src="https://elements-cover-images-0.imgix.net/ece070d5-ca62-424f-a5cf-309eb2419474?auto=compress%2Cformat&fit=max&w=1370&s=6492562f29b6971c5031df85b5eb85ab"
+              alt=""
+            />
           </div>
         </div>
       </article>
 
-
-      <!-- Section Prueba -->
-        <article class="row">
-          <div class="col-12 d-flex justify-content-center">
-            <h1 class="text-warning">Contact Me</h1>
+      <!-- Reviews -->
+      <div class="col-12 custom-div-100px"></div>
+      <article class="row">
+        <section class="col-12">
+          <div class="col-12 text-center text-warning">
+            <h1>REVIEWS <h1 class="custom-about-me">REVIEWS</h1></h1>
           </div>
-          <section class="col-12">
-            <div class="col-6">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Your Name" aria-label="Username" aria-describedby="basic-addon1">
+          <section class="row">
+            <div class="col-4">
+              <div class="container">
+                <div class="container-inner">
+                  <img
+                    class="circle"
+                    src="https://envato-shoebox-0.imgix.net/53bb/d958-13cc-4c3a-bf4a-641afa8d5267/DSC_1436.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=800&s=a023bea931fc47550d39dfae1a6bd1b6"
+                  />
+                  <img class="img img1" src="./assets/images/profile-pic.png" />
+                </div>
               </div>
             </div>
 
-            <div class="col-6">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Your Email" aria-label="Username" aria-describedby="basic-addon1">
+            <div class="col-4">
+              <div class="container">
+                <div class="container-inner">
+                  <img
+                    class="circle"
+                    src="https://envato-shoebox-0.imgix.net/53bb/d958-13cc-4c3a-bf4a-641afa8d5267/DSC_1436.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=800&s=a023bea931fc47550d39dfae1a6bd1b6"
+                  />
+                  <img
+                    class="img img1"
+                    src="./assets/images/profile-pic-1.png"
+                  />
+                </div>
               </div>
             </div>
 
-            <div class="col-6">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Your Subject" aria-label="Username" aria-describedby="basic-addon1">
+            <div class="col-4">
+              <div class="container">
+                <div class="container-inner">
+                  <img
+                    class="circle"
+                    src="https://envato-shoebox-0.imgix.net/53bb/d958-13cc-4c3a-bf4a-641afa8d5267/DSC_1436.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=800&s=a023bea931fc47550d39dfae1a6bd1b6"
+                  />
+                  <img class="img img1" src="./assets/images/IMG-2859.jpg" />
+                </div>
               </div>
-            </div>
-
-            <div class="input-group">
-              <textarea class="form-control" placeholder="Your Message" aria-label="Your Message" ></textarea>
             </div>
           </section>
-        </article>
+        </section>
+      </article>
+
+      <!-- Contact Me -->
+      <div class="col-12 custom-div-100px"></div>
+      <article class="row">
+        <div class="col-12 text-center text-warning">
+          <h1>CONTACT ME <h1 class="custom-about-me">CONTACT ME</h1></h1>
+        </div>
+        <section class="col-6">
+          <div class="col-12">
+            <h2>Just say Hello</h2>
+          </div>
+          <div class="col-12">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Name"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Email"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Your Subject"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="input-group">
+              <textarea
+                class="form-control"
+                placeholder="Your Message"
+                aria-label="Your Message"
+                rows="5"
+              ></textarea>
+            </div>
+          </div>
+          <div class="col-12">
+            <button class="download-btn">Send Email</button>
+          </div>
+        </section>
+        <section class="col-6">
+          <div class="col-12">
+            <h2>Contact Info</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius,
+              veritatis.
+            </p>
+          </div>
+          <div class="col-12 d-flex justify-content-between">
+            <div class="col-1">
+              <i class="fa-solid fa-envelope fa-xl"></i>
+            </div>
+            <div class="col-10">
+              <h5 class="col-12">Email</h5>
+              <p>julioph0n3@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-12 d-flex justify-content-between">
+            <div class="col-1">
+              <i class="fa-solid fa-envelope fa-xl"></i>
+            </div>
+            <div class="col-10">
+              <h5 class="col-12">Phone</h5>
+              <p>julioph0n3@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="col-12 d-flex justify-content-between">
+            <div class="col-1">
+              <i class="fa-solid fa-envelope fa-xl"></i>
+            </div>
+            <div class="col-10">
+              <h5 class="col-12">Address</h5>
+              <p>576 Nw 114th Ave, Fontainebleau, Fl 33172</p>
+            </div>
+          </div>
+          <br />
+
+          <div class="row">
+            <div class="col-12">
+              <h5>Visite my social profile and get connected</h5>
+            </div>
+            <div class="row d-flex justify-content-evenly">
+              <div class="col-4">
+                <i class="fa-brands fa-square-facebook fa-2xl"></i>
+              </div>
+              <div class="col-4">
+                <i class="fa-brands fa-linkedin-in fa-2xl"></i>
+              </div>
+              <div class="col-4">
+                <i class="fa-brands fa-square-github fa-2xl"></i>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- Section Prueba -->
+      <br />
+      <br />
+      <br />
+
+      <!-- footer -->
+
+      <br />
+      <!-- Section Prueba -->
+
+      
       <!-- FIN Seccioon Prueba -->
     </main>
+
+    <footer class="row">
+      <section class="col-12 d-flex justify-content-center">
+        <h6>© 2020. Designed by Bermudez. All right reserved.</h6>
+      </section>
+    </footer>
     <!-- 
     <section class="row">
       <div class="col-6">
@@ -532,7 +650,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- Jquery Ripples -->
-
+    <script src="./assets/js/jquery.ripples-min.js"></script>
     <!-- JavaScript Main -->
     <script src="./assets/js/jquery.js"></script>
   </body>
