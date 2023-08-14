@@ -37,14 +37,13 @@ font-size: 400%;
 
 .custom-img-half-face-bg {
   height: 500px;
-  padding-right: 45px;
+  
   opacity: 6;
 }
 .custom-img-half-face-bg img {
   opacity: 0.1;
 }
-.custom-div-img-portfolio {
-}
+
 
 /*Landing Image*/
 .container {
@@ -74,7 +73,7 @@ font-size: 400%;
   top: -200px;
 }
 .circle {
-  background-color:;
+  
   border-radius: 50%;
   border: solid 15px #0a101e;
   cursor: pointer;
