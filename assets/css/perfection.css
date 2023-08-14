@@ -138,6 +138,7 @@ color: var(--white-text-color);
   .btn:hover:after {
     -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    
   }
   /* About me section */
 .custom-avatar-img-half-face {
@@ -147,10 +148,28 @@ color: var(--white-text-color);
 .custom-container-about-me{
     margin: 0px 0px 0px 20px;
 }
-
-
-
-
+/* Custom Portfolio */
+.custom-portfolio img {
+    border-radius: 20px;
+    
+}
+.custom-portfolio img:hover{
+    animation-duration: 0.8s;
+    animation-name: test;
+    border: solid 0.5px #fec544;
+    
+}
+@keyframes test {
+    from{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-8px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
 
 
 /* Test Field */
