@@ -1,6 +1,6 @@
 $(".custom-container-picture-drops").ripples({
-  dropRadius: 45,
-  perturbance: 0.03,
+  dropRadius: 30,
+  perturbance: 0.02,
   resolution: 150,
   interactive: true,
 });
