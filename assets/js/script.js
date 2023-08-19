@@ -1,7 +1,7 @@
 $(".custom-container-picture-drops").ripples({
-  dropRadius: 20,
+  dropRadius: 45,
   perturbance: 0.03,
-  resolution: 600,
+  resolution: 150,
   interactive: true,
 });
 
@@ -13,7 +13,7 @@ const observer = new IntersectionObserver((entries) => {
       $(".picMovmnt").addClass("movement");
       $(".artclMovmnt").addClass("movement1");
       movement();
-      movementBar()
+      movementBar();
     }
   });
 });
@@ -59,7 +59,6 @@ function movementBar() {
   let countBar = () => {
     iniValue = iniValue + numSpeed;
 
-    console.log(iniValue);
     if (iniValue < value0) {
       $("#bar0").css("width", `${iniValue}%`);
       if (iniValue < value1) {
@@ -93,14 +92,4 @@ function movementBar() {
   // }
 }
 
-
-
 // Testing Field
-
-$('#image').animate('tile', {
-  "duration": 3000,
-  "rows": 12,
-  "cols": 8,
-  "effect": "rotate flipX flyToLeft flyToUp",
-  "fillMode": "forwards"
-});

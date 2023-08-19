@@ -19,8 +19,7 @@ img {
 /* Custom Container Picture Drops */
 .custom-container-picture-drops {
   height: 930px;
-  background-image: url(../images/Untitled.png);
-  height: 930px;
+  background-image: url(../images/Untitled.png);  
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
@@ -232,4 +231,14 @@ from{
     font-size: 370%;
     bottom: 50px;
   }
+  .custom-avatar-img-profile{
+    margin-left: 15px;
+  }
 }
+
+
+@media screen and (max-width: 540px) {
+  .custom-responsive-icons{
+    margin: 0px 20px 0px 20px;
+  }
+  }

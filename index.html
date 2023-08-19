@@ -17,7 +17,7 @@
   </head>
   <body class="bg-color">
     <!-- Header -->
-    <header class="row sticky-top opacity-75 bg-color">
+    <header class="row sticky-top opacity-75 bg-color" >
       <section
         class="col-12 d-flex justify-content-center text position-absolute"
       >
@@ -46,11 +46,11 @@
                 id="navbarNavAltMarkup"
               >
                 <div class="navbar-nav">
-                  <a class="nav-link white" href="#">HOME</a>
-                  <a class="nav-link warning" href="#">ABOUT</a>
-                  <a class="nav-link white" href="#">RESUME</a>
-                  <a class="nav-link white" href="#">PORTFOLIO</a>
-                  <a class="nav-link white" href="#">CONTACT</a>
+                  <a class="nav-link white" href="#home">HOME</a>
+                  <a class="nav-link warning" href="#about">ABOUT</a>
+                  <a class="nav-link white" href="#skills">MY SKILLS</a>
+                  <a class="nav-link white" href="#portfolio">PORTFOLIO</a>
+                  <a class="nav-link white" href="#contact">CONTACT</a>
                   <a class="nav-link d-none d-lg-block white" href="#">|</a>
                   <a class="nav-link d-none d-lg-block" href="#"
                     ><i class="fa-solid fa-phone" style="color: #ffffff"></i
@@ -66,7 +66,7 @@
       </section>
     </header>
     <!-- Water -->
-    <section class="row custom-margin-water-container">
+    <section class="row custom-margin-water-container" id="home">
       <div class="custom-container-picture-drops">
         <section class="row d-flex justify-content-center">
           <div
@@ -82,23 +82,23 @@
               <h1>Hi, I am <span>J.Bermudez</span></h1>
             </div>
 
-            <div class="col-12 text-center container">
-              <p>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-9 col-xxl-8 text-center container">
+              <p class="">
                 I am a frontend web developer. I can provide clean code and
-                pixel perfect design. <br />
+                pixel perfect design.
                 I also make website more & more interactive with web animations.
               </p>
             </div>
             <div class="d-flex justify-content-center custom-container-icons">
               <div class="col-3 d-flex justify-content-evenly">
-                <div class="col-2 white">
-                  <i class="fa-brands fa-github fa-2xl"></i>
+                <div class="col-2 custom-responsive-icons">
+                  <a href="https://github.com/JulioBermudez" class="white"><i class="fa-brands fa-github fa-2xl"></i></a>
                 </div>
-                <div class="col-2 white">
-                  <i class="fa-brands fa-linkedin fa-2xl"></i>
+                <div class="col-2 white custom-responsive-icons">
+                  <a href="https://www.linkedin.com/in/julio-bermudez-4b3742251/" class="white"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
                 </div>
-                <div class="col-2 white">
-                  <i class="fa-brands fa-facebook fa-2xl"></i>
+                <div class="col-2 white custom-responsive-icons">
+                  <a href="https://www.facebook.com/profile.php?id=100008852680959&mibextid=LQQJ4d" class="white"><i class="fa-brands fa-facebook fa-2xl"></i></a>
                 </div>
               </div>
             </div>
@@ -110,7 +110,7 @@
     <div class="container-div"></div>
 
     <!-- About Me -->
-    <section class="row d-flex flex-wrap">
+    <section class="row d-flex flex-wrap" id="about">
       <article class="col-12 text-center custom-text-title">
         <h1 class="warning">
           ABOUT ME
@@ -129,7 +129,9 @@
               <img src="./assets/images/IMG-2859.jpg" alt="avatar image" />
             </div>
           </picture>
-          <article class="col-sm-11 col-md-8 col-lg-6 artclMovmnt">
+          <article
+            class="col-sm-11 col-md-8 col-lg-6 artclMovmnt custom-avatar-img-profile"
+          >
             <h1 class="white mb-3">Hi there!, I am J. Bermudez</h1>
             <h4 class="warning mb-3">Visual Designer</h4>
 
@@ -164,7 +166,7 @@
     <div class="container-div"></div>
 
     <!-- My Skills -->
-    <section class="row">
+    <section class="row" id="skills">
       <article class="col-12 text-center custom-text-title">
         <h1 class="warning">
           MY SKILLS
@@ -190,8 +192,9 @@
             aria-valuemax="100"
             style="height: 5px; margin-bottom: 10px"
           >
-            <div id="bar0"
-              class="progress-bar progress-bar-striped progress-bar-animated "
+            <div
+              id="bar0"
+              class="progress-bar progress-bar-striped progress-bar-animated"
               style="width: 50%"
             ></div>
           </div>
@@ -210,7 +213,8 @@
             aria-valuemax="100"
             style="height: 5px; margin-bottom: 10px"
           >
-            <div id="bar1"
+            <div
+              id="bar1"
               class="progress-bar progress-bar-striped progress-bar-animated"
               style="width: 50%"
             ></div>
@@ -230,8 +234,9 @@
             aria-valuemax="100"
             style="height: 5px; margin-bottom: 10px"
           >
-            <div id="bar2"
-              class="progress-bar progress-bar-striped progress-bar-animated "
+            <div
+              id="bar2"
+              class="progress-bar progress-bar-striped progress-bar-animated"
               style="width: 50%"
             ></div>
           </div>
@@ -250,8 +255,9 @@
             aria-valuemax="100"
             style="height: 5px; margin-bottom: 10px"
           >
-            <div id="bar3"
-              class="progress-bar progress-bar-striped progress-bar-animated "
+            <div
+              id="bar3"
+              class="progress-bar progress-bar-striped progress-bar-animated"
               style="width: 50%"
             ></div>
           </div>
@@ -272,7 +278,8 @@
             aria-valuemax="100"
             style="height: 5px; margin-bottom: 10px"
           >
-            <div id="bar4"
+            <div
+              id="bar4"
               class="progress-bar progress-bar-striped progress-bar-animated"
               style="width: 50%"
             ></div>
@@ -292,7 +299,8 @@
             aria-valuemax="100"
             style="height: 5px; margin-bottom: 10px"
           >
-            <div id="bar5"
+            <div
+              id="bar5"
               class="progress-bar progress-bar-striped progress-bar-animated"
               style="width: 50%"
             ></div>
@@ -312,8 +320,9 @@
             aria-valuemax="100"
             style="height: 5px; margin-bottom: 10px"
           >
-            <div id="bar6"
-              class="progress-bar progress-bar-striped progress-bar-animated "
+            <div
+              id="bar6"
+              class="progress-bar progress-bar-striped progress-bar-animated"
               style="width: 50%"
             ></div>
           </div>
@@ -332,7 +341,8 @@
             aria-valuemax="100"
             style="height: 5px; margin-bottom: 10px"
           >
-            <div id="bar7"
+            <div
+              id="bar7"
               class="progress-bar progress-bar-striped progress-bar-animated"
               style="width: 50%"
             ></div>
@@ -344,7 +354,7 @@
     <div class="container-div"></div>
 
     <!-- Portfolio -->
-    <section class="row">
+    <section class="row" id="portfolio">
       <article class="col-12 text-center custom-text-title">
         <h1 class="warning">
           PORTFOLIO
@@ -408,7 +418,7 @@
     <div class="container-div"></div>
 
     <!-- Contact me -->
-    <article class="col-12 text-center custom-text-title">
+    <article class="col-12 text-center custom-text-title" id="contact">
       <h1 class="warning">
         CONTACT ME
         <h1 class="shadow-text opacity-25 position-relative">CONTACT ME</h1>
@@ -511,25 +521,29 @@
             <h5 class="col-12" style="margin-bottom: 30px">
               Visite my social profile and get connected
             </h5>
-            <i
-              class="fa-brands fa-square-github fa-xl col-2"
-              style="color: #fdfeff"
-            ></i>
-            <i
-              class="fa-brands fa-linkedin-in fa-xl col-2"
-              style="color: #fdfeff"
-            ></i>
-            <i
-              class="fa-brands fa-facebook-f fa-xl col-2"
-              style="color: #fdfeff"
-            ></i>
+            
+            <div class="col-8 d-flex justify-content-evenly">
+              <div class="col-2 custom-responsive-icons">
+                <a href="https://github.com/JulioBermudez" class="white"><i class="fa-brands fa-github fa-2xl"></i></a>
+              </div>
+              <div class="col-2 white custom-responsive-icons">
+                <a href="https://www.linkedin.com/in/julio-bermudez-4b3742251/" class="white"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+              </div>
+              <div class="col-2 white custom-responsive-icons">
+                <a href="https://www.facebook.com/profile.php?id=100008852680959&mibextid=LQQJ4d" class="white"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+              </div>
+            </div>
           </div>
         </section>
       </div>
     </section>
 
-
-
+<!-- Footer -->
+    <footer class="row mt-4">
+      <div class="col-12 text-center white">
+<h6>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2023 J.Bermudez. All Rights Reserved</h6>
+      </div>
+    </footer>
 
 
 
