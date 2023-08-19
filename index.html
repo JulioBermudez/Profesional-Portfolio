@@ -11,508 +11,531 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-    <!-- CSS Main -->
+    <!-- Css Main -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body class="row d-flex justify-content-center">
+  <body class="bg-color">
     <!-- Header -->
-    <header class="row d-flex justify-content-center sticky-top">
-      <section class="col-12 custom-section-header">
-        <nav class="navbar navbar-dark bg-secondary">
-          <div class="container-fluid d-flex justify-content-end">
-            <div class="col-2 text-end">Bermudez</div>
-            <div class="col-6 d-flex justify-content-center">
-              <ul class="col-10 d-flex justify-content-evenly">
-                <li>Home</li>
-                <li>About</li>
-                <li>Resume</li>
-                <li>Portfolio</li>
-                <li>Contact</li>
-                <li class="text-warning">+1 754 715 8059</li>
-              </ul>
-            </div>
-
-            <div class="col-3 d-flex justify-content-end">
+    <header class="row sticky-top opacity-75 bg-color">
+      <section
+        class="col-12 d-flex justify-content-center text position-absolute"
+      >
+        <div class="col-12">
+          <nav class="navbar navbar-expand-lg custom-nav-bar d-flex flex-wrap">
+            <div class="container-fluid">
+              <div class="col-lg-4 col-xl-4 col-xxl-5">
+                <a class="navbar-brand" href="#"
+                  ><i class="fa-brands warning fa-black-tie fa-2xl"></i
+                  ><span class="white"> J.Bermudez</span></a
+                >
+              </div>
               <button
-                id="nav-bar-menu"
                 class="navbar-toggler"
                 type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasDarkNavbar"
-                aria-controls="offcanvasDarkNavbar"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
                 aria-label="Toggle navigation"
               >
                 <span class="navbar-toggler-icon"></span>
               </button>
-            </div>
-            <div
-              class="offcanvas offcanvas-end text-bg-dark"
-              tabindex="-1"
-              id="offcanvasDarkNavbar"
-              aria-labelledby="offcanvasDarkNavbarLabel"
-            >
-              <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                  Dark offcanvas
-                </h5>
-                <button
-                  type="button"
-                  class="btn-close btn-close-white"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
-                ></button>
-              </div>
-              <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a
-                      class="nav-link dropdown-toggle"
-                      href="#"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li>
-                        <a class="dropdown-item" href="#">Another action</a>
-                      </li>
-                      <li>
-                        <hr class="dropdown-divider" />
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          >Something else here</a
-                        >
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-                <form class="d-flex mt-3" role="search">
-                  <input
-                    class="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button class="btn btn-success" type="submit">Search</button>
-                </form>
+              <div
+                class="collapse navbar-collapse col-xl-4 col-xxl-5"
+                id="navbarNavAltMarkup"
+              >
+                <div class="navbar-nav">
+                  <a class="nav-link white" href="#">HOME</a>
+                  <a class="nav-link warning" href="#">ABOUT</a>
+                  <a class="nav-link white" href="#">RESUME</a>
+                  <a class="nav-link white" href="#">PORTFOLIO</a>
+                  <a class="nav-link white" href="#">CONTACT</a>
+                  <a class="nav-link d-none d-lg-block white" href="#">|</a>
+                  <a class="nav-link d-none d-lg-block" href="#"
+                    ><i class="fa-solid fa-phone" style="color: #ffffff"></i
+                  ></a>
+                  <a class="nav-link d-none d-lg-block warning" href="#"
+                    >+1 754 715 8059</a
+                  >
+                </div>
               </div>
             </div>
-          </div>
-        </nav>
+          </nav>
+        </div>
       </section>
     </header>
+    <!-- Water -->
+    <section class="row custom-margin-water-container">
+      <div class="custom-container-picture-drops">
+        <section class="row d-flex justify-content-center">
+          <div
+            class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-9 col-xxl-8 custom-container-avatar"
+          >
+            <div class="d-flex justify-content-center">
+              <div class="custom-avatar">
+                <img src="./assets/images/avatar.png" alt="Avatar Image" />
+              </div>
+            </div>
 
-    <!-- Landing img -->
-    <article
-      class="row bg-dark d-flex justify-content-center custom-container-hero"
-    >
-      <section class="custom-container-content-hero">
-        <div class="row">
-          <div class="col-12">
-            <div class="container">
-              <div class="container-inner">
-                <img
-                  class="circle"
-                  src="https://envato-shoebox-0.imgix.net/53bb/d958-13cc-4c3a-bf4a-641afa8d5267/DSC_1436.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=800&s=a023bea931fc47550d39dfae1a6bd1b6"
-                />
-                <img class="img img1" src="./assets/images/testImg.png" />
-              </div>
+            <div class="col-12 text-center custom-greetings container">
+              <h1>Hi, I am <span>J.Bermudez</span></h1>
             </div>
-          </div>
-          <!-- Text-Content-Small-Img -->
-          <div class="col-12 text-center">
-            <h1>Hi, I'm <span class="text-warning">Julio Bermudez</span></h1>
-            <br />
-            <p>
-              I am a frontend web developer. I can provide clean code and pixel
-              perfect design. I also make website more & more interactive with
-              web animations.
-            </p>
-          </div>
-          <section class="col-12 d-flex justify-content-center">
-            <div class="col-4 d-flex justify-content-evenly">
-              <div><i class="fa-brands fa-github fa-xl"></i></div>
-              <div><i class="fa-brands fa-linkedin fa-xl"></i></div>
-              <div><i class="fa-brands fa-facebook fa-xl"></i></div>
-            </div>
-          </section>
-        </div>
-      </section>
-    </article>
-    <!-- Main -->
-    <main class="col-9">
-      <br />
-      <section class="row">
-        <!-- About Me -->
-        <div class="col-12 text-center text-warning">
-          <h1>About Me</h1>
-        </div>
-        <div class="d-flex justify-content-center">
-          <div class="col-12 d-flex justify-content-evenly">
-            <div class="col-6 d-flex justify-content-end">
-              <div class="custom-img-half-face-bg">
-                <img src="./assets/images/half-head-left.png" alt="" />
-              </div>
-            </div>
-            <div class="col-6">
-              <h1>Hi There! I'm Julio Bermudez</h1>
-              <h5 class="text-warning">Visual designer</h5>
+
+            <div class="col-12 text-center container">
               <p>
-                I am a Visual Designer with a strong focus on digital branding.
-                Visul design seeks to attract, inspire, create desires and
-                motivate people to respond to messages, with a view to making a
-                favorable impact.
+                I am a frontend web developer. I can provide clean code and
+                pixel perfect design. <br />
+                I also make website more & more interactive with web animations.
               </p>
-              <ul>
-                <li>Birthday: Aug 08, 1990</li>
-                <li>Phone: +1 754 715 8059</li>
-                <li>Email: julioph0n3@gmail.com</li>
-                <li>From: 576 Nw 114th Ave</li>
-                <li>Languaje: English, Spanish</li>
-                <li>Freelance: Available</li>
-              </ul>
-              <button class="download-btn">Download CV</button>
             </div>
-          </div>
-        </div>
-      </section>
-      <br />
-      <!-- Why Choose Me -->
-      <div class="col-12 text-center text-warning">
-        <h1>Why Choose Me</h1>
-        <h6>My Experience Area</h6>
-      </div>
-
-      <article class="row d-flex justify-content-center">
-        <section class="col-6">
-          <div class="col-12">
-            <div class="d-flex justify-content-between">
-              <h6>HTML</h6>
-              <h6>98%</h6>
-            </div>
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Animated striped example"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated"
-                style="width: 98%"
-              ></div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="d-flex justify-content-between">
-              <h6>CSS</h6>
-              <h6>90%</h6>
-            </div>
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Animated striped example"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated"
-                style="width: 90%"
-              ></div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="d-flex justify-content-between">
-              <h6>JavaScript</h6>
-              <h6>85%</h6>
-            </div>
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Animated striped example"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated"
-                style="width: 85%"
-              ></div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="d-flex justify-content-between">
-              <h6>Content Writing</h6>
-              <h6>95%</h6>
-            </div>
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Animated striped example"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated"
-                style="width: 95%"
-              ></div>
+            <div class="d-flex justify-content-center custom-container-icons">
+              <div class="col-3 d-flex justify-content-evenly">
+                <div class="col-2 white">
+                  <i class="fa-brands fa-github fa-2xl"></i>
+                </div>
+                <div class="col-2 white">
+                  <i class="fa-brands fa-linkedin fa-2xl"></i>
+                </div>
+                <div class="col-2 white">
+                  <i class="fa-brands fa-facebook fa-2xl"></i>
+                </div>
+              </div>
             </div>
           </div>
         </section>
-        <section class="col-6">
-          <div class="col-12">
-            <div class="d-flex justify-content-between">
-              <h6>Node.Js</h6>
-              <h6>80%</h6>
-            </div>
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Animated striped example"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated"
-                style="width: 80%"
-              ></div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="d-flex justify-content-between">
-              <h6>Web Design</h6>
-              <h6>96%</h6>
-            </div>
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Animated striped example"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated"
-                style="width: 96%"
-              ></div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="d-flex justify-content-between">
-              <h6>Web UI Design</h6>
-              <h6>49%</h6>
-            </div>
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Animated striped example"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated"
-                style="width: 49%"
-              ></div>
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="d-flex justify-content-between">
-              <h6>jQuery</h6>
-              <h6>89%</h6>
-            </div>
-            <div
-              class="progress"
-              role="progressbar"
-              aria-label="Animated striped example"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            >
-              <div
-                class="progress-bar progress-bar-striped progress-bar-animated"
-                style="width: 89%"
-              ></div>
-            </div>
-          </div>
-        </section>
-        <!-- Seccion Prueba -->
-      </article>
-      <br />
-      <!-- Portfolio -->
-      <article class="row">
-        <div class="col-12 d-flex justify-content-center">
-          <h1 class="text-warning">Portfolio</h1>
-        </div>
-        <div class="col-12 d-flex flex-wrap justify-content-center">
-          <div class="col-4 p-3 custom-div-img-portfolio">
-            <img src="./assets/images/IMG-2858.jpg" alt="" />
-          </div>
-          <div class="col-4 p-3 custom-div-img-portfolio">
-            <img src="./assets/images/IMG-2858.jpg" alt="" />
-          </div>
-          <div class="col-4 p-3 custom-div-img-portfolio">
-            <img src="./assets/images/IMG-2858.jpg" alt="" />
-          </div>
-          <div class="col-4 p-3 custom-div-img-portfolio">
-            <img src="./assets/images/IMG-2858.jpg" alt="" />
-          </div>
-          <div class="col-4 p-3 custom-div-img-portfolio">
-            <img src="./assets/images/IMG-2858.jpg" alt="" />
-          </div>
-          <div class="col-4 p-3 custom-div-img-portfolio">
-            <img src="./assets/images/IMG-2858.jpg" alt="" />
-          </div>
-        </div>
-      </article>
-
-
-      <!-- Section Prueba -->
-        <article class="row">
-          <div class="col-12 d-flex justify-content-center">
-            <h1 class="text-warning">Contact Me</h1>
-          </div>
-          <section class="col-12">
-            <div class="col-6">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Your Name" aria-label="Username" aria-describedby="basic-addon1">
-              </div>
-            </div>
-
-            <div class="col-6">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Your Email" aria-label="Username" aria-describedby="basic-addon1">
-              </div>
-            </div>
-
-            <div class="col-6">
-              <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Your Subject" aria-label="Username" aria-describedby="basic-addon1">
-              </div>
-            </div>
-
-            <div class="input-group">
-              <textarea class="form-control" placeholder="Your Message" aria-label="Your Message" ></textarea>
-            </div>
-          </section>
-        </article>
-      <!-- FIN Seccioon Prueba -->
-    </main>
-    <!-- 
-    <section class="row">
-      <div class="col-6">
-        Presentation
-        <div class="row">
-          <div class="col-12">
-            <h3>Hi, I'm</h3>
-            <h1>Julio Bermudez</h1>
-            <br />
-            <h3>Full Stack Web Developer</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-              impedit repellendus consequatur quibusdam, illum iure animi
-              inventore maxime vitae perferendis!
-            </p>
-          </div>
-          <div class="col-12">
-            <button>Download</button>
-            <button>Contact</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-4 custom-face-img-div">
-        <img class="face-img" src="#" alt="" />
       </div>
     </section>
 
-    <br />
-    <div class="row">
-      <div class="col-12">About Me</div>
-      <div class="col-12">
-        <div>Picture</div>
-        <h2>Hi There! I'm Julio Bermudez</h2>
-        <h4>Web developer</h4>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-          Exercitationem vero saepe est ullam quod! Earum expedita dignissimos
-          itaque velit eaque.
-        </p>
-        <div class="col-12">
-          <ul>
-            <li>Birthday : Aug 08, 1990</li>
-            <li>Phone : +1 754 715 8059</li>
-            <li>Email : julioph0n3@gmail.com</li>
-            <li>From : 576 NW 114th AVE</li>
-            <li>Languaje : English, Spanish</li>
-          </ul>
-        </div>
-        <div>
-          <button>Download CV</button>
-        </div>
-      </div>
-    </div>
-    <br />
-    <div class="row">
-      <div>
-        <ul>
-          <li>Web Design</li>
-          <li>App Development</li>
-          <li>Product Design</li>
-          <li>Responsive Design</li>
-        </ul>
-      </div>
-    </div>
-    <br />
-    <div class="row">
-      <div>
-        <h2>My Skills</h2>
-      </div>
-      <div class="col-12">
-        <h3>All the skills that I have in that field of work are mentioned.</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sint
-          ipsum quasi laboriosam, fugit libero tempore nobis adipisci ea earum.
-        </p>
-        <div>Grafic with my porcentage</div>
-      </div>
-    </div>
-    <br />
-    <div class="row">
-      <h1>Resume</h1>
-    </div>
-    <br />
-    <div class="row">
-      <h2>Portfolio</h2>
-    </div>
-    <br />
-    <div class="row">
-      <div class="col-12">
-        <h2>reviews</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
-        <h2>Contact Me</h2>
-      </div>
-    </div> -->
+    <div class="container-div"></div>
 
+    <!-- About Me -->
+    <section class="row d-flex flex-wrap">
+      <article class="col-12 text-center custom-text-title">
+        <h1 class="warning">
+          ABOUT ME
+          <h1 class="shadow-text opacity-25 position-relative">ABOUT ME</h1>
+        </h1>
+      </article>
+
+      <section class="row d-flex justify-content-center">
+        <div
+          class="col-sm-12 col-lg-8 d-flex justify-content-evenly flex-wrap custom-container-about-me"
+        >
+          <picture
+            class="col-sm-12 col-lg-6 d-flex justify-content-center opacity-50 picMovmnt"
+          >
+            <div class="custom-avatar-img-profile">
+              <img src="./assets/images/IMG-2859.jpg" alt="avatar image" />
+            </div>
+          </picture>
+          <article class="col-sm-11 col-md-8 col-lg-6 artclMovmnt">
+            <h1 class="white mb-3">Hi there!, I am J. Bermudez</h1>
+            <h4 class="warning mb-3">Visual Designer</h4>
+
+            <p class="grey">
+              I am a Visual Designer with a strong focus on digital branding.
+              Visul design seeks to attract, inspire, create desires and
+              motivate people to respond to messages, with a view to making a
+              favorable impact.
+            </p>
+
+            <ul class="grey">
+              <li>Birthday : Aug 08, 1990</li>
+              <br />
+              <li>Phone : +1 754 715 8059</li>
+              <br />
+              <li>Email : julioph0n3@gmail.com</li>
+              <br />
+              <li>From : 576 Nw 114th Ave, Fl 33172</li>
+              <br />
+              <li>Languaje : English, Spanish</li>
+              <br />
+              <li>Freelance : Available</li>
+            </ul>
+            <div class="col-sm-12 d-flex justify-content-center">
+              <button class="btn"><span>Download CV</span></button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </section>
+
+    <div class="container-div"></div>
+
+    <!-- My Skills -->
+    <section class="row">
+      <article class="col-12 text-center custom-text-title">
+        <h1 class="warning">
+          MY SKILLS
+          <h1 class="shadow-text opacity-25 position-relative">MY SKILLS</h1>
+        </h1>
+      </article>
+    </section>
+    <section class="row d-flex justify-content-center skills">
+      <div class="col-sm-12 col-lg-9 d-flex flex-wrap justify-content-evenly">
+        <section class="col-10 col-sm-10 col-lg-5">
+          <!-- 1 -->
+          <div class="col-12 d-flex white">
+            <h6 class="col-10">HTML</h6>
+            <h6 class="text-end col-2" id="num0" data-count="94"></h6>
+            <h6 class="col-1">%</h6>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Animated striped example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="height: 5px; margin-bottom: 10px"
+          >
+            <div id="bar0"
+              class="progress-bar progress-bar-striped progress-bar-animated "
+              style="width: 50%"
+            ></div>
+          </div>
+          <!-- 2 -->
+          <div class="col-12 d-flex white">
+            <h6 class="col-10">JQuery</h6>
+            <h6 class="text-end col-2" id="num1" data-count="92"></h6>
+            <h6 class="col-1">%</h6>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Animated striped example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="height: 5px; margin-bottom: 10px"
+          >
+            <div id="bar1"
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              style="width: 50%"
+            ></div>
+          </div>
+          <!-- 3 -->
+          <div class="col-12 d-flex white">
+            <h6 class="col-10">Node.Js</h6>
+            <h6 class="text-end col-2" id="num2" data-count="78"></h6>
+            <h6 class="col-1">%</h6>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Animated striped example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="height: 5px; margin-bottom: 10px"
+          >
+            <div id="bar2"
+              class="progress-bar progress-bar-striped progress-bar-animated "
+              style="width: 50%"
+            ></div>
+          </div>
+          <!-- 4 -->
+          <div class="col-12 d-flex white">
+            <h6 class="col-10">Bootstrap</h6>
+            <h6 class="text-end col-2" id="num3" data-count="84"></h6>
+            <h6 class="col-1">%</h6>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Animated striped example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="height: 5px; margin-bottom: 10px"
+          >
+            <div id="bar3"
+              class="progress-bar progress-bar-striped progress-bar-animated "
+              style="width: 50%"
+            ></div>
+          </div>
+        </section>
+        <section class="col-10 col-sm-10 col-lg-5">
+          <!-- 1 -->
+          <div class="col-12 d-flex white">
+            <h6 class="col-10">UX and UI Design</h6>
+            <h6 class="text-end col-2" id="num4" data-count="89"></h6>
+            <h6 class="col-1">%</h6>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Animated striped example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="height: 5px; margin-bottom: 10px"
+          >
+            <div id="bar4"
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              style="width: 50%"
+            ></div>
+          </div>
+          <!-- 2 -->
+          <div class="col-12 d-flex white">
+            <h6 class="col-10">CSS</h6>
+            <h6 class="text-end col-2" id="num5" data-count="98"></h6>
+            <h6 class="col-1">%</h6>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Animated striped example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="height: 5px; margin-bottom: 10px"
+          >
+            <div id="bar5"
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              style="width: 50%"
+            ></div>
+          </div>
+          <!-- 3 -->
+          <div class="col-12 d-flex white">
+            <h6 class="col-10">Git</h6>
+            <h6 class="text-end col-2" id="num6" data-count="83"></h6>
+            <h6 class="col-1">%</h6>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Animated striped example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="height: 5px; margin-bottom: 10px"
+          >
+            <div id="bar6"
+              class="progress-bar progress-bar-striped progress-bar-animated "
+              style="width: 50%"
+            ></div>
+          </div>
+          <!-- 4 -->
+          <div class="col-12 d-flex white">
+            <h6 class="col-10">Problem-solving</h6>
+            <h6 class="text-end col-2" id="num7" data-count="75"></h6>
+            <h6 class="col-1">%</h6>
+          </div>
+          <div
+            class="progress"
+            role="progressbar"
+            aria-label="Animated striped example"
+            aria-valuenow="75"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="height: 5px; margin-bottom: 10px"
+          >
+            <div id="bar7"
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              style="width: 50%"
+            ></div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <div class="container-div"></div>
+
+    <!-- Portfolio -->
+    <section class="row">
+      <article class="col-12 text-center custom-text-title">
+        <h1 class="warning">
+          PORTFOLIO
+          <h1 class="shadow-text opacity-25 position-relative">PORTFOLIO</h1>
+        </h1>
+      </article>
+
+      <section class="row d-flex justify-content-center">
+        <article
+          class="col-sm-12 col-lg-9 d-flex justify-content-center justify-content-evenly flex-wrap custom-portfolio"
+        >
+          <div
+            class="col-10 col-sm-10 col-lg-12"
+            style="margin-bottom: 30px; height: 300px"
+          >
+            <img
+              src="https://elements-cover-images-0.imgix.net/5e9e5ac6-0af0-4bf4-9cc8-ceaf6afca7e6?auto=compress%2Cformat&fit=max&w=1370&s=449d34fd8f969758445b251800abb996"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-10 col-sm-10 col-lg-4"
+            style="margin-bottom: 30px; height: 300px"
+          >
+            <img
+              src="https://elements-cover-images-0.imgix.net/265ee29e-2b82-4e71-94e6-fd545ccabe14?auto=compress%2Cformat&fit=max&w=1370&s=b1bec7556a644f7bfe01cd51b305de9b"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-10 col-sm-10 col-lg-7"
+            style="margin-bottom: 30px; height: 300px"
+          >
+            <img
+              src="https://elements-cover-images-0.imgix.net/1e33719b-4f0e-403f-929a-108c81070efd?auto=compress%2Cformat&fit=max&w=1370&s=a3ab018d07e59ba4220ef7d89041369c"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-10 col-sm-10 col-lg-7"
+            style="margin-bottom: 30px; height: 300px"
+          >
+            <img
+              src="https://elements-cover-images-0.imgix.net/ece070d5-ca62-424f-a5cf-309eb2419474?auto=compress%2Cformat&fit=max&w=1370&s=6492562f29b6971c5031df85b5eb85ab"
+              alt=""
+            />
+          </div>
+          <div
+            class="col-10 col-sm-10 col-lg-4"
+            style="margin-bottom: 30px; height: 300px"
+          >
+            <img
+              src="https://elements-cover-images-0.imgix.net/70266ea4-4eee-4566-b4c5-2cce1b593bc8?auto=compress%2Cformat&fit=max&w=1370&s=78ad857fb00785ebcc263a18230bedb2"
+              alt=""
+            />
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <div class="container-div"></div>
+
+    <!-- Contact me -->
+    <article class="col-12 text-center custom-text-title">
+      <h1 class="warning">
+        CONTACT ME
+        <h1 class="shadow-text opacity-25 position-relative">CONTACT ME</h1>
+      </h1>
+    </article>
+
+    <section class="row d-flex justify-content-center">
+      <div class="col-sm-12 col-lg-9 d-flex flex-wrap justify-content-evenly">
+        <section class="col-10 col-sm-10 col-lg-5">
+          <h2 class="white">Just Say Hello!</h2>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              id="formGroupExampleInput"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              id="formGroupExampleInput2"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              id="formGroupExampleInput3"
+              placeholder="Your Subject"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label"></label>
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+
+          <button class="btn" style="margin-bottom: 50px">
+            <span>Send Message</span>
+          </button>
+        </section>
+
+        <section class="col-10 col-sm-10 col-lg-5">
+          <h2 class="white" style="margin-bottom: 30px">Just Say Hello!</h2>
+          <div class="col-12 grey" style="margin-bottom: 30px">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi unde
+              nobis consectetur aliquid obcaecati rerum quod odio eaque
+              blanditiis eum vitae aut, dolor et non.
+            </p>
+          </div>
+          <div
+            class="col-12 d-flex flex-wrap justify-content-between white"
+            style="margin-bottom: 30px"
+          >
+            <i
+              class="fa-solid fa-envelope fa-2xl col-1"
+              style="color: #fdfeff; margin-top: 10px"
+            ></i>
+            <h5 class="col-3">Email:</h5>
+            <h6 class="col-7 grey" style="margin-top: 3px">
+              julioph0n3@gmail.com
+            </h6>
+          </div>
+          <div
+            class="col-12 d-flex flex-wrap justify-content-between white"
+            style="margin-bottom: 30px"
+          >
+            <i
+              class="fa-solid fa-phone fa-2xl col-1"
+              style="color: #fdfeff; margin-top: 10px"
+            ></i>
+            <h5 class="col-3">Phone:</h5>
+            <h6 class="col-7 grey" style="margin-top: 3px">+1 754 715 8059</h6>
+          </div>
+          <div
+            class="col-12 d-flex flex-wrap justify-content-between white"
+            style="margin-bottom: 5px"
+          >
+            <i
+              class="fa-solid fa-location-dot fa-2xl col-1"
+              style="color: #fdfeff; margin-top: 10px"
+            ></i>
+            <h5 class="col-3">Location:</h5>
+            <h6 class="col-7 grey" style="margin-top: 3px">
+              576 Nw 114th Ave, Fontainebleau, FL 33172
+            </h6>
+          </div>
+          <div class="col-12 d-flex flex-wrap justify-content-center white">
+            <h5 class="col-12" style="margin-bottom: 30px">
+              Visite my social profile and get connected
+            </h5>
+            <i
+              class="fa-brands fa-square-github fa-xl col-2"
+              style="color: #fdfeff"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin-in fa-xl col-2"
+              style="color: #fdfeff"
+            ></i>
+            <i
+              class="fa-brands fa-facebook-f fa-xl col-2"
+              style="color: #fdfeff"
+            ></i>
+          </div>
+        </section>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- Script -->
     <!-- Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
@@ -524,16 +547,18 @@
       src="https://kit.fontawesome.com/c2587f10ba.js"
       crossorigin="anonymous"
     ></script>
-    <!-- JQuery -->
+    <!-- Jquery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
       integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <!-- JQuery animation -->
+    <script src="./assets/js/jquery.animations-tile.min.js"></script>
     <!-- Jquery Ripples -->
-
+    <script src="./assets/js/jquery.ripples.js"></script>
     <!-- JavaScript Main -->
-    <script src="./assets/js/jquery.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
