@@ -267,6 +267,9 @@ from{
   .custom-avatar-img-profile{
     margin-bottom: 0px;
   }
+  .custom-container-picture-drops{
+    resolution: 1000;
+  }
 }
 
 

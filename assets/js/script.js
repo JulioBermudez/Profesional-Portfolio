@@ -1,9 +1,11 @@
 $(".custom-container-picture-drops").ripples({
-  dropRadius: 10,
+  dropRadius: 300,
   perturbance: 0.005,
-  resolution: 400,
+  resolution: 60,
   interactive: true,
 });
+
+
 
 const observer = new IntersectionObserver((entries) => {
   // Loop over the entries
