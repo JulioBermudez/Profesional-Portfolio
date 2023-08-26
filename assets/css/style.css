@@ -9,6 +9,10 @@ img {
   height: 100%;
   object-fit: cover;
 }
+a {
+  text-decoration: none;
+  color: var(--white-text-color);
+}
 
 @font-face {
   font-family: "doctor";

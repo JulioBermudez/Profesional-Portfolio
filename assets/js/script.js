@@ -5,8 +5,6 @@ $(".custom-container-picture-drops").ripples({
   interactive: true,
 });
 
-
-
 const observer = new IntersectionObserver((entries) => {
   // Loop over the entries
   entries.forEach((entry) => {
@@ -45,9 +43,8 @@ function movement() {
     count();
   }
 }
-
+// Bar movement
 function movementBar() {
-  // for (let i = 0; i < 8; i++) {
   let value0 = $(`#num0`).data("count");
   let value1 = $(`#num1`).data("count");
   let value2 = $(`#num2`).data("count");
@@ -91,7 +88,13 @@ function movementBar() {
     }
   };
   countBar();
-  // }
 }
+// Watch resume Button
+$("#btnResume").click((e) => {
+  e.preventDefault();
+  window.location.href =
+    "./assets/others/Resume Julio Bermudez Web Developer .pdf";
+});
 
-// Testing Field
+
+
