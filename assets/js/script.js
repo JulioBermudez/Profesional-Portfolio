@@ -1,7 +1,7 @@
 $(".custom-container-picture-drops").ripples({
-  dropRadius: 300,
-  perturbance: 0.005,
-  resolution: 60,
+  dropRadius: 50,
+  perturbance: 0.03,
+  resolution: 200,
   interactive: true,
 });
 
@@ -93,8 +93,14 @@ function movementBar() {
 $("#btnResume").click((e) => {
   e.preventDefault();
   window.location.href =
-    "./assets/others/Resume Julio Bermudez Web Developer .pdf";
+    "./assets/others/Resume Julio Bermudez Web Developer.pdf"; 
 });
+// Delay needed to download resume
+$("#btnDownload").click(() => {
+//   var delay = 5000;
+// window.setTimeout(function(){$('#btnDownload')[0].click();},delay);
+// return
+})
 
 
 

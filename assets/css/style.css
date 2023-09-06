@@ -29,20 +29,31 @@ a {
 @font-face {
   font-family: "CassanemoPress";
   src: url(../fonts/CassanemoPress.ttf);
-} 
+}
 .water {
   font-family: "CassanemoPress";
 }
-.doctor{
+.doctor {
   font-family: "doctor";
   font-size: 180%;
 }
 
-p ,li {
+p,
+li {
   font-family: "Groningen-Regular";
 }
-h1, h2 ,h3, h4, h5 ,h6, a, span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span {
   font-family: "Groningen-Bold";
+}
+.nav-link:hover{
+  color: var(--warning-color);
 }
 .grey {
   color: var(--grey-text-color);
@@ -53,7 +64,7 @@ h1, h2 ,h3, h4, h5 ,h6, a, span {
 /* Custom Container Picture Drops */
 .custom-container-picture-drops {
   height: 930px;
-  background-image: url(../images/Untitled.png);  
+  background-image: url(../images/Untitled.png);
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
@@ -97,7 +108,6 @@ h1, h2 ,h3, h4, h5 ,h6, a, span {
   height: 190px;
   border-radius: 50%;
   margin-bottom: 20px;
-  
 }
 .custom-avatar img {
   left: -1px;
@@ -106,7 +116,6 @@ h1, h2 ,h3, h4, h5 ,h6, a, span {
   width: 182px;
   height: 180px;
   border-radius: 50%;
-  
 }
 /* Custom greetings */
 .custom-greetings h1 {
@@ -191,14 +200,16 @@ h1, h2 ,h3, h4, h5 ,h6, a, span {
   animation-name: movePortfolio;
   border: solid 0.5px #fec544;
 }
-.movement{
+.movement {
   animation-duration: 5s;
   animation-name: moveImg;
-  
 }
-.movement1{
+.movement1 {
   animation-duration: 5s;
   animation-name: moveDiv;
+}
+#paragraph{
+  color: var(--white-text-color);
 }
 
 @keyframes movePortfolio {
@@ -216,7 +227,7 @@ h1, h2 ,h3, h4, h5 ,h6, a, span {
   from {
     transform: translateX(0px);
   }
-  25%{
+  25% {
     transform: translateX(-20px);
   }
   to {
@@ -227,7 +238,7 @@ h1, h2 ,h3, h4, h5 ,h6, a, span {
   from {
     transform: translateX(0px);
   }
-  25%{
+  25% {
     transform: translateX(20px);
   }
   to {
@@ -235,23 +246,11 @@ h1, h2 ,h3, h4, h5 ,h6, a, span {
   }
 }
 
-
-
-
-
-
-
-@keyframes anima {
-  
-from{
- 
-}
-
-
-}
 /* Test Field */
 
 /* End Test Field */
+@media screen and (max-width: 1025px) {
+}
 
 @media screen and (max-width: 770px) {
   .custom-greetings h1 {
@@ -264,21 +263,20 @@ from{
     font-size: 370%;
     bottom: 50px;
   }
-  .custom-avatar-img-profile{
+  .custom-avatar-img-profile {
     margin-left: 15px;
   }
-  
-  .custom-avatar-img-profile{
+
+  .custom-avatar-img-profile {
     margin-bottom: 0px;
   }
-  .custom-container-picture-drops{
+  .custom-container-picture-drops {
     resolution: 1000;
   }
 }
 
-
 @media screen and (max-width: 540px) {
-  .custom-responsive-icons{
+  .custom-responsive-icons {
     margin: 0px 20px 0px 20px;
   }
-  }
+}
