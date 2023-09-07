@@ -25,14 +25,12 @@
           <nav class="navbar navbar-expand-lg custom-nav-bar d-flex flex-wrap">
             <div class="container-fluid">
               <div class="navbar-brand col-lg-4 col-xl-3 col-xxl-4 p-2">
-                <div style="width: 50px">
-                  <a href="#"
-                    ><img src="./assets/images/Gold Icon Tie.I01.2k.png" alt=""
-                  /></a>
+                <div>
+                  <div class="liquid_shape"></div>
                 </div>
               </div>
               <button
-                class="navbar-toggler"
+                class="navbar-toggler custom-button"
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target="#navbarNavAltMarkup"
@@ -87,7 +85,7 @@
               class="col-12 col-sm-12 col-md-12 col-lg-10 col-xl-9 col-xxl-8 text-center container"
             >
               <p id="paragraph">
-                I am a frontend web developer. I can provide clean code and
+                I am a Full stack web developer. I can provide clean code and
                 pixel perfect design. I also make website more & more
                 interactive with web animations.
               </p>
@@ -122,62 +120,63 @@
 
     <div class="container-div"></div>
 
-    <!-- About Me -->
-    <section class="row d-flex flex-wrap" id="about">
-      <article class="col-12 text-center custom-text-title">
-        <h1 class="warning">
-          ABOUT ME
-          <h1 class="shadow-text opacity-25 position-relative">ABOUT ME</h1>
-        </h1>
-      </article>
+      <!-- About Me -->
+      <section class="row d-flex flex-wrap position-relative" id="about">
+        <canvas
+        class ="canvas"
+        style="width: 100%; height: 100%; position: absolute; z-index: -1"
+      ></canvas>
+        <article class="col-12 text-center custom-text-title">
+          <h1 class="warning">
+            ABOUT ME
+            <h1 class="shadow-text opacity-25 position-relative">ABOUT ME</h1>
+          </h1>
+        </article>
 
-      <section class="row d-flex justify-content-center custom-section-about">
-        <div
-          class="col-sm-12 col-lg-8 d-flex justify-content-evenly flex-wrap custom-container-about-me"
-        >
-          <picture
-            class="col-sm-12 col-lg-6 d-flex justify-content-center  picMovmnt"
+        <section class="row d-flex justify-content-center custom-section-about">
+          <div
+            class="col-sm-12 col-lg-8 d-flex justify-content-evenly flex-wrap custom-container-about-me"
           >
-            <div class="custom-avatar-img-profile">
-              <img src="./assets/images/IMG-2859.jpg" alt="avatar image" />
-            </div>
-          </picture>
-          <article
-            class="col-sm-11 col-md-8 col-lg-6 artclMovmnt custom-avatar-img-profile"
-          >
-            <h1 class="white mb-3 mt-4">Hi there!, I am J. Bermudez</h1>
-            <h4 class="warning mb-3">Visual Designer</h4>
+            <picture
+              class="col-sm-12 col-lg-6 d-flex justify-content-center picMovmnt"
+            >
+              <div class="custom-avatar-img-profile">
+                <img src="./assets/images/IMG-2859.jpg" alt="avatar image" />
+              </div>
+            </picture>
+            <article
+              class="col-sm-11 col-md-8 col-lg-6 artclMovmnt custom-avatar-img-profile"
+            >
+              <h1 class="white mb-3 mt-4">Hi there!, I am J. Bermudez</h1>
+              <h4 class="warning mb-3">Visual Designer</h4>
 
-            <p class="white">
-             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut mollitia recusandae et earum perferendis non magnam numquam porro ullam laudantium!
-            </p>
-            <br />
-            <ul class="grey">
-              <li>Birthday : Aug 08, 1990</li>
+              <p class="white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                mollitia recusandae et earum perferendis non magnam numquam
+                porro ullam laudantium!
+              </p>
               <br />
-              <li>Phone : +1 754 715 8059</li>
+              <ul class="grey">
+                <li>Birthday : Aug 08, 1990</li>
+                <br />
+                <li>Phone : +1 754 715 8059</li>
+                <br />
+                <li>Email : julioph0n3@gmail.com</li>
+                <br />
+                <li>From : 576 Nw 114th Ave, Fl 33172</li>
+                <br />
+                <li>Languaje : English, Spanish</li>
+                <br />
+                <li>Freelance : <span class="warning">Available</span></li>
+              </ul>
               <br />
-              <li>Email : julioph0n3@gmail.com</li>
-              <br />
-              <li>From : 576 Nw 114th Ave, Fl 33172</li>
-              <br />
-              <li>Languaje : English, Spanish</li>
-              <br />
-              <li>Freelance : <span class="warning">Available</span></li>
-            </ul>
-            <br />
-            <section class="d-flex flex-wrap justify-content-between">
-            <div class="col-sm-6 ">
-              <button
-                class="btn"
-                id="btnResume"
-              >
-                <span>WATCH MY CV</span>
-            </button>
-
-          
-            </div>
-            <!-- <div class="col-4 col-sm-4 col-md-4 col-lg-6 col-xl-4 col-xxl-3">
+              <section class="d-flex flex-wrap justify-content-between">
+                <div class="col-sm-6">
+                  <button class="btn" id="btnResume">
+                    <span>WATCH MY CV</span>
+                  </button>
+                </div>
+                <!-- <div class="col-4 col-sm-4 col-md-4 col-lg-6 col-xl-4 col-xxl-3">
               <a
                 class="btn"
                 id="btnDownload"
@@ -189,16 +188,17 @@
                 <span>DOWNLOAD CV</span>
               </a>          
             </div> -->
-          </section>
-          </article>
-        </div>
+              </section>
+            </article>
+          </div>
+        </section>
       </section>
-    </section>
-
-    <div class="container-div custom-hide-div"></div>
+    
+    <div class="container-div custom-hide-div">   
+    </div>
 
     <!-- My Skills -->
-    <section class="row" id="skills">
+    <section class="row" id="skills particles-js">
       <article class="col-12 text-center custom-text-title">
         <h1 class="warning">
           MY SKILLS
@@ -206,7 +206,7 @@
         </h1>
       </article>
     </section>
-    <section class="row d-flex justify-content-center skills">
+    <section class="row d-flex justify-content-center skills position-relative">
       <div class="col-sm-12 col-lg-9 d-flex flex-wrap justify-content-evenly">
         <section class="col-10 col-sm-10 col-lg-5">
           <!-- 1 -->
@@ -386,7 +386,7 @@
     <div class="container-div"></div>
 
     <!-- Portfolio -->
-    <section class="row" id="portfolio">
+    <section class="row position-relative" id="portfolio">
       <article class="col-12 text-center custom-text-title">
         <h1 class="warning">
           PORTFOLIO
@@ -450,6 +450,7 @@
     <div class="container-div"></div>
 
     <!-- Contact me -->
+
     <article class="col-12 text-center custom-text-title" id="contact">
       <h1 class="warning">
         CONTACT ME
@@ -583,7 +584,7 @@
           </div>
         </section>
       </div>
-    </section>
+    
 
     <!-- Footer -->
     <footer class="row mt-4">
@@ -618,6 +619,8 @@
     <script src="./assets/js/jquery.animations-tile.min.js"></script>
     <!-- Jquery Ripples -->
     <script src="./assets/js/jquery.ripples.js"></script>
+    <script src="./assets/js/particles.js"></script>
+
     <!-- JavaScript Main -->
     <script src="./assets/js/script.js"></script>
   </body>
