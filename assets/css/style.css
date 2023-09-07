@@ -13,7 +13,10 @@ a {
   text-decoration: none;
   color: var(--white-text-color);
 }
-
+@font-face {
+  font-family: "blackSignature";
+  src: url(../fonts/Black\ \ Signature.ttf);
+}
 @font-face {
   font-family: "doctor";
   src: url(../fonts/TheDoctor.ttf);
@@ -78,6 +81,7 @@ span {
 .custom-margin-water-container {
   bottom: 80px;
 }
+
 /* White text colors */
 .white {
   color: var(--white-text-color);
@@ -183,6 +187,7 @@ span {
   -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
   transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
+
 /* About me section */
 .custom-avatar-img-profile {
   height: 500px;
@@ -208,10 +213,47 @@ span {
   animation-duration: 5s;
   animation-name: moveDiv;
 }
+.signature {
+position:absolute;
+font-family: "CassanemoPress";
+color: var(--warning-color);
+top: 8px;
+left: -18px;
+rotate: -25deg;
+}
+.liquid_shape {
+  position: relative;
+  background: linear-gradient(80deg, #369fb2 5%, #4d355c 100% );
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 20px #000 ;
+  border-radius: 70% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: liquid 8s ease-in-out infinite
+}
+.custom-button {
+ border: solid 2px #979ba6;
+}
 #paragraph{
   color: var(--white-text-color);
 }
 
+@keyframes liquid {
+  0%{
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-size: 100% 100%;
+    
+  }
+  50%{
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    background-size: 300% 150%;
+   
+  }
+  100%{
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background-size: 100% 100%;
+    
+  }
+}
 @keyframes movePortfolio {
   from {
     transform: translateY(0px);
