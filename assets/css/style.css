@@ -4,6 +4,7 @@
   --white-text-color: #fdfeff;
   --grey-text-color: #979ba6;
 }
+
 img {
   width: 100%;
   height: 100%;
@@ -55,7 +56,7 @@ a,
 span {
   font-family: "Groningen-Bold";
 }
-.nav-link:hover{
+.nav-link:hover {
   color: var(--warning-color);
 }
 .grey {
@@ -138,7 +139,9 @@ span {
   height: 60px;
 }
 /* Custom Text Title */
-
+.custom-text-title{
+  filter: opacity(0.0);
+}
 .shadow-text {
   font-size: 570%;
   color: var(--grey-text-color);
@@ -197,13 +200,18 @@ span {
   margin: 0px 0px 0px 20px;
 }
 /* Custom Portfolio */
-.custom-portfolio img {
+.custom-portfolio img, .custom-movement-div {
   border-radius: 20px;
 }
-.custom-portfolio img:hover {
+ 
+.custom-movement-div:hover{
   animation-duration: 0.8s;
   animation-name: movePortfolio;
   border: solid 0.5px #fec544;
+  cursor: pointer;
+}
+.custom-movement-div section{
+  animation: coming-soon 2s infinite;
 }
 .movement {
   animation-duration: 5s;
@@ -213,45 +221,73 @@ span {
   animation-duration: 5s;
   animation-name: moveDiv;
 }
+.movement2{
+  animation: 3s showDiv linear forwards;
+}
 .signature {
-position:absolute;
-font-family: "CassanemoPress";
-color: var(--warning-color);
-top: 8px;
-left: -18px;
-rotate: -25deg;
+  position: absolute;
+  font-family: "CassanemoPress";
+  color: var(--warning-color);
+  top: 8px;
+  left: -18px;
+  rotate: -25deg;
 }
 .liquid_shape {
   position: relative;
-  background: linear-gradient(80deg, #369fb2 5%, #4d355c 100% );
-  width: 40px;
-  height: 40px;
-  box-shadow: 0 0 20px #000 ;
+  background: linear-gradient(80deg, #369fb2 5%, #4d355c 100%);
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 20px #000;
   border-radius: 70% 40% 30% 70% / 60% 30% 70% 40%;
-  animation: liquid 8s ease-in-out infinite
+  animation: liquid 2.5s ease-in-out infinite;
+  z-index: 2;
+}
+.canvas{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  
 }
 .custom-button {
- border: solid 2px #979ba6;
+  border: solid 2px #979ba6;
 }
-#paragraph{
+#paragraph {
   color: var(--white-text-color);
+}
+@keyframes coming-soon {
+  0%{
+    filter: opacity(0.0);
+  }
+  50%{
+filter: opacity(1);
+  }
+  100%{
+filter: opacity(0.0);
+  }
+}
+@keyframes showDiv {
+  0%{
+    filter: opacity(0.0);
+  }
+  100%{
+    filter: opacity(0.8);
+  }
+  
 }
 
 @keyframes liquid {
-  0%{
+  0% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     background-size: 100% 100%;
-    
   }
-  50%{
+  50% {
     border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
     background-size: 300% 150%;
-   
   }
-  100%{
+  100% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     background-size: 100% 100%;
-    
   }
 }
 @keyframes movePortfolio {

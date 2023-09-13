@@ -9,7 +9,7 @@ let particlesArray;
 let mouse = {
   x: null,
   y: null,
-  radius: (canvas.height/80) * (canvas.width/80)
+  radius: (canvas.height/10000) * (canvas.width/10000)
 }
 
 window.addEventListener('mousemove', function(event){
@@ -78,8 +78,8 @@ function init(){
     let size = (Math.random() * 2) + 1;
     let x = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size *2);
     let y = (Math.random() * ((innerWidth - size * 2) - (size * 2)) + size *2);
-    let directionX = (Math.random() * 0.8);
-    let directionY = (Math.random() * 0.8);
+    let directionX = (Math.random() * 0.4);
+    let directionY = (Math.random() * 0.6);
     let color = '#8c5523';
 
     particlesArray.push(new Particle(x, y, directionX, directionY, size, color));

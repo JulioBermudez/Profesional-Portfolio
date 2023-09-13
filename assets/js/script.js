@@ -5,23 +5,41 @@ $(".custom-container-picture-drops").ripples({
   interactive: true,
 });
 
-const observer = new IntersectionObserver((entries) => {
+
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    entry.target.classList.toggle("movement2", entry.isIntersecting)
+  });
+})
+
+observer.observe(document.getElementById("divAbout"));
+observer.observe(document.getElementById("divSkills"));
+observer.observe(document.getElementById("divPortfolio"));
+observer.observe(document.getElementById("contact"));
+
+const observer1 = new IntersectionObserver((entries) => {
   // Loop over the entries
   entries.forEach((entry) => {
     // If the element is visible
     if (entry.isIntersecting) {
       $(".picMovmnt").addClass("movement");
       $(".artclMovmnt").addClass("movement1");
+      $("#divAbout").addClass("movement2");
+      $("#divSkills").addClass("movement3");
+      
       movement();
       movementBar();
     }
   });
 });
 //I use javaScrip here because is not working with jQuery
-observer.observe(document.querySelector(".picMovmnt"));
-observer.observe(document.querySelector(".artclMovmnt"));
-observer.observe(document.querySelector(".skills"));
-observer.observe(document.querySelector("#num0"));
+observer1.observe(document.querySelector(".picMovmnt"));
+observer1.observe(document.querySelector(".artclMovmnt"));
+observer1.observe(document.querySelector(".skills"));
+// observer1.observe(document.querySelector("#num0"));
+// observer1.observe(document.querySelector("#divAbout"));
+// observer1.observe(document.querySelector("#divSkills"));
 
 // Numbers Counter
 for (let i = 0; i < 8; i++) {}
