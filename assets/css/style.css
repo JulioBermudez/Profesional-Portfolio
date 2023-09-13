@@ -139,8 +139,8 @@ span {
   height: 60px;
 }
 /* Custom Text Title */
-.custom-text-title{
-  filter: opacity(0.0);
+.custom-text-title {
+  filter: opacity(0);
 }
 .shadow-text {
   font-size: 570%;
@@ -200,18 +200,24 @@ span {
   margin: 0px 0px 0px 20px;
 }
 /* Custom Portfolio */
-.custom-portfolio img, .custom-movement-div {
+.custom-portfolio img,
+.custom-movement-div {
   border-radius: 20px;
 }
- 
-.custom-movement-div:hover{
+
+.custom-movement-div:hover {
   animation-duration: 0.8s;
   animation-name: movePortfolio;
   border: solid 0.5px #fec544;
   cursor: pointer;
 }
-.custom-movement-div section{
+.custom-movement-div section {
   animation: coming-soon 2s infinite;
+}
+.custom-movement-div h3 {
+  color: #ff0f0f;
+  margin-top: 140px;
+  font-family: "Groningen-Bold";
 }
 .movement {
   animation-duration: 5s;
@@ -221,7 +227,7 @@ span {
   animation-duration: 5s;
   animation-name: moveDiv;
 }
-.movement2{
+.movement2 {
   animation: 3s showDiv linear forwards;
 }
 .signature {
@@ -242,12 +248,11 @@ span {
   animation: liquid 2.5s ease-in-out infinite;
   z-index: 2;
 }
-.canvas{
+.canvas {
   width: 100%;
   height: 100%;
   position: absolute;
   z-index: -1;
-  
 }
 .custom-button {
   border: solid 2px #979ba6;
@@ -256,24 +261,23 @@ span {
   color: var(--white-text-color);
 }
 @keyframes coming-soon {
-  0%{
-    filter: opacity(0.0);
+  0% {
+    filter: opacity(0);
   }
-  50%{
-filter: opacity(1);
+  50% {
+    filter: opacity(1);
   }
-  100%{
-filter: opacity(0.0);
+  100% {
+    filter: opacity(0);
   }
 }
 @keyframes showDiv {
-  0%{
-    filter: opacity(0.0);
+  0% {
+    filter: opacity(0);
   }
-  100%{
+  100% {
     filter: opacity(0.8);
   }
-  
 }
 
 @keyframes liquid {
