@@ -4,9 +4,6 @@ $(".custom-container-picture-drops").ripples({
   resolution: 500,
   interactive: true,
 });
-
-
-
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     entry.target.classList.toggle("movement2", entry.isIntersecting)
